@@ -1,0 +1,19 @@
+{
+  "name": "yuncms/yii2-search",
+  "description": "The search extension for the yuncms",
+  "keywords": [
+    "yuncms",
+    "search"
+  ],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "yiisoft/yii2-sphinx": ">=2.0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "yuncms\\search\\": ""
+    }
+  }
+}
