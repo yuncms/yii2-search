@@ -8,11 +8,12 @@ namespace yuncms\search;
 
 use Yii;
 
-
 /**
  * This is the main module class for the yii2-user.
  */
 class Module extends \yii\base\Module
 {
-
+    public $models = [
+        
+    ];
 }
