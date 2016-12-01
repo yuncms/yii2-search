@@ -8,11 +8,16 @@
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "require": {
-    "yiisoft/yii2": "~2.0.0",
-    "yiisoft/yii2-sphinx": ">=2.0.6",
-    "yuncms/yii2-system": ">=1.0.3"
+    "php": ">=5.4.0",
+    "ext-scws": "*",
+    "yiisoft/yii2": "~2.0.6",
+    "yiisoft/yii2-sphinx": "~2.0.6",
+    "yuncms/yii2-system": "~1.0.0"
   },
   "autoload": {
+    "files": [
+      "helpers.php"
+    ],
     "psr-4": {
       "yuncms\\search\\": ""
     }
