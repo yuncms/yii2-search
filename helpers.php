@@ -5,6 +5,27 @@
  * @license http://www.tintsoft.com/license/
  */
 
+if (!function_exists('highlight_words')) {
+    /**
+     * 高亮关键词
+     * @param string|array $words
+     * @param string $string
+     * @return mixed
+     */
+    function highlight_words($words, $string)
+    {
+        if (!is_string($string) || (!is_array($words) && !is_string($words))) {
+            return $string;
+        }
+        if (is_array($words)) {
+            $pattern = '/(' . implode('|', $words) . ')/i';
+        } else {
+            $pattern = '/(' . $words . ')/i';
+        }
+        return preg_replace($pattern, "<font style=\"color:red;font-weight:700;\">\\1</font>", $string);
+    }
+}
+
 if (!function_exists('key_extra')) {
     /**
      * 从文本中提取关键词
@@ -38,6 +59,7 @@ if (!function_exists('key_extra')) {
         return [];
     }
 }
+
 if (!function_exists('pullword')) {
     /**
      * 分词
