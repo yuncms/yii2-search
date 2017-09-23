@@ -16,17 +16,29 @@
   "suggest": {
     "ext-scws": "Participle"
   },
+  "extra": {
+    "yuncms": {
+      "name": "search",
+      "i18n": {
+        "class": "yii\\i18n\\PhpMessageSource",
+        "sourceLanguage": "en-US",
+        "basePath": "@yuncms/search/messages"
+      },
+      "migrationNamespace": "yuncms\\search\\migrations",
+      "backend": {
+      },
+      "frontend": {}
+    },
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  },
   "autoload": {
     "files": [
       "helpers.php"
     ],
     "psr-4": {
       "yuncms\\search\\": ""
-    }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
     }
   }
 }
